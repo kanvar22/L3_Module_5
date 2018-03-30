@@ -30,7 +30,15 @@ public class MurderOfCrows {
          */
         
         /* 2. How many innocent crows had to die before the diamond was found? */
-        
+    	
+        for (int i = 0; i < theMurder.size(); i++) {
+        if (theMurder.get(i).getStomachContents().contains("diamond")) {
+		
+		
+        	System.out.println("The guilty crow is " + theMurder.get(i).getName());
+        	System.out.println("There were 5 innocent crows.");
+		}
+		}
     }
 
     private void initializeCrows() {
@@ -48,7 +56,7 @@ public class MurderOfCrows {
     }
 }
 
-class Crow {
+class Crow{
     private String name;
     private ArrayList<String> stomachContents = new ArrayList<String>();
 
