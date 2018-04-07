@@ -28,9 +28,13 @@ public class RemovingStuffFromArrayLists {
 		System.out.println(stuffIFoundInTheYard.size());
 
 		/* TODO 1: Clean out the dirt but keep the delicious worms. */
+
 for (int i = 0; i < stuffIFoundInTheYard.size(); i++) {
-	stuffIFoundInTheYard.size();
+	if (stuffIFoundInTheYard.contains("Dirt")) {
+	stuffIFoundInTheYard.remove(i);
+	}
 }
+
 		System.out.println(stuffIFoundInTheYard.size()); // should be 2
 
 		ArrayList<Character> truth = new ArrayList<Character>();

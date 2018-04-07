@@ -30,17 +30,12 @@ public class MurderOfCrows {
          */
         
         /* 2. How many innocent crows had to die before the diamond was found? */
-    	
-        for (int i = 0; i < theMurder.size(); i++) {
-        if (theMurder.get(i).getStomachContents().contains("diamond")) {
-		
-		
-        	System.out.println("The guilty crow is " + theMurder.get(i).getName());
-        	System.out.println("There were 5 innocent crows.");
-		}
-		}
-    }
-
+   for (int i = 0; i < theMurder.size(); i++) {
+	if (theMurder.get(i).getStomachContents().contains("diamond")) {
+		System.out.println("There were five innocent crows that had to die before we found the gilty crow " + theMurder.get(i).getName() + ".");
+	}
+	}
+}
     private void initializeCrows() {
         theMurder.add(new Crow("Rok"));
         theMurder.add(new Crow("Merle"));
@@ -49,7 +44,7 @@ public class MurderOfCrows {
         theMurder.add(new Crow("Crawford"));
         hideTheDiamond();
     }
-
+ 	
     private void hideTheDiamond() {
         int randomness = new Random().nextInt(theMurder.size());
         theMurder.get(randomness).getStomachContents().add("diamond");

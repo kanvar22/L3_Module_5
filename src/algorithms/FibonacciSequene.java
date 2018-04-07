@@ -20,8 +20,8 @@ public class FibonacciSequene {
 		
 	}
 	public void Sequence(){
-		c = a + b;
-		System.out.println(""+c);
+		c = a+b;
+		System.out.println("" + c);
 		a = b;
 		b = c;
 	}
